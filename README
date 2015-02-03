@@ -1,0 +1,1 @@
+Dockerfile for CentOS 6.5 that installs useful dependencies and Puppet agent.
