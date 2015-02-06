@@ -12,5 +12,8 @@ RUN yum install -y sudo openssh-server openssh-clients curl ntpdate
 # install common deps for services
 RUN yum install -y git java-1.7.0-openjdk tar unzip vixie-cron
 
+# install ruby 1.9.3 via SCL (used by some services)
+RUN yum install -y centos-release-SCL scl-utils ruby193
+
 # install puppet agent
 RUN yum install -y puppet
